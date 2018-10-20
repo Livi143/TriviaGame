@@ -1,72 +1,53 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Trivia Game</title>
-</head>
-<body>
+    <head>
+        <title>Trivia Game!</title>
+        <script type="text/javascript">
+        
+            var score;
+            score =0;
+            alert("Hello! Enjoy the Trivia!")
+            var q1;
 
-<h1>My First Heading</h1>
+            q1 = prompt("what is the capital of the US?");
+            if(q1 == "Washington DC") {
+                score++;
+                alert("nice job! your score is "+ score);
+            }
 
-<!--I totally stole this button and function from w3schools-->
-<p>Click the button to wait 5 seconds, then alert "Times Up!".</p>
+            else { 
+                alert("Sorry! That is incorrect! Your Score is "+ score);
+            }
+            
+            q2 = prompt("what is the capital of Finland?");
+            if(q2 == "Helsinki") {
+                score++;
+                alert("nice job! your score is "+ score);
+            }
 
-<button onclick="timesUp()">Try it</button>
+            else { 
+                alert("Sorry! That is incorrect! Your Score is "+ score);
+            }
 
-<script>
-var countDown=5000;
+            q3 = prompt("Is git hard?");
+            if(q3 == "yes") {
+                score++;
+                alert("nice job! your score is "+ score);
+            }
 
-function timesUp() {
-    myVar = setTimeout(alertFunc, countDown);
-}
+            else { 
+                alert("Sorry! That is incorrect! Your Score is "+ score);
+            }
 
-function alertFunc() {
-  alert("Times Up!");
-}
-</script>
-<!-- stack overflow ex-->
- 
-    <label>Please specify car:</label>&nbsp; &nbsp;
-    <label>BMW</label>
-    <input type="radio" name="car" id="is_BMW" />
-    &nbsp;&nbsp;
-    <label>Mercedes</label>
-    <input type="radio" name="car" id="is_Mercedes" />
+    </script>
+    </head>
 
-    <label>Please specify car:</label>&nbsp; &nbsp;
-    <label>BMW</label>
-    <input type="radio" name="car" id="is_BMW" />
-    &nbsp;&nbsp;
-    <label>Mercedes</label>
-    <input type="radio" name="car" id="is_Mercedes" />
-
-    <label>Please specify car:</label>&nbsp; &nbsp;
-    <label>BMW</label>
-    <input type="radio" name="car" id="is_BMW" />
-    &nbsp;&nbsp;
-    <label>Mercedes</label>
-    <input type="radio" name="car" id="is_Mercedes" />
-
-    <label>Please specify car:</label>&nbsp; &nbsp;
-    <label>BMW</label>
-    <input type="radio" name="car" id="is_BMW" />
-    &nbsp;&nbsp;
-    <label>Mercedes</label>
-    <input type="radio" name="car" id="is_Mercedes" />
-
-<script>
-function valueChanged() {
-    if (document.getElementById("is_BMW").checked == true) {
-        document.getElementById("is_BMW").value = 1;
-        document.getElementById("is_Mercedes").value = 0;
-    } else {
-        document.getElementById("is_BMW").value = 0;
-        document.getElementById("is_Mercedes").value = 1;
-    }
-    console.log(document.getElementById("is_BMW").value);
-    console.log(document.getElementById("is_Mercedes").value)
-}
-</script>
+    <body> 
 
 
-</body>
+
+
+
+    
+    </body>
 </html>
