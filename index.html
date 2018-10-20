@@ -10,13 +10,13 @@
 <!--I totally stole this button and function from w3schools-->
 <p>Click the button to wait 5 seconds, then alert "Times Up!".</p>
 
-<button onclick="myFunction()">Try it</button>
+<button onclick="timesUp()">Try it</button>
 
 <script>
-var myVar;
+var countDown=5000;
 
 function timesUp() {
-    myVar = setTimeout(alertFunc, 5000);
+    myVar = setTimeout(alertFunc, countDown);
 }
 
 function alertFunc() {
