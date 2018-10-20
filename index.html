@@ -6,7 +6,23 @@
 <body>
 
 <h1>My First Heading</h1>
-<p>My first paragraph.</p>
+
+<!--I totally stole this button and function from w3schools-->
+<p>Click the button to wait 5 seconds, then alert "Times Up!".</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+var myVar;
+
+function timesUp() {
+    myVar = setTimeout(alertFunc, 5000);
+}
+
+function alertFunc() {
+  alert("Times Up!");
+}
+</script>
 
 </body>
 </html>
