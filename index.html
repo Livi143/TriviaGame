@@ -1,53 +1,25 @@
-<!DOCTYPE html>
+<!DOCTYPE <!DOCTYPE html>
 <html>
-    <head>
-        <title>Trivia Game!</title>
-        <script type="text/javascript">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Totally Trivial Triva</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" integrity="sha256-ihAoc6M/JPfrIiIeayPE9xjin4UWjsx2mjW/rtmxLM4="
+        crossorigin="anonymous"></script>
         
-            var score;
-            score =0;
-            alert("Hello! Enjoy the Trivia!")
-            var q1;
+</head>
 
-            q1 = prompt("what is the capital of the US?");
-            if(q1 == "Washington DC") {
-                score++;
-                alert("nice job! your score is "+ score);
-            }
+<body>
+    <div id="wrapper">
+    <h1 id="title">Totally Trivial Triva</h1>
+        <div id="subwrapper">
+         <button id="start">Start Game</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
 
-            else { 
-                alert("Sorry! That is incorrect! Your Score is "+ score);
-            }
-            
-            q2 = prompt("what is the capital of Finland?");
-            if(q2 == "Helsinki") {
-                score++;
-                alert("nice job! your score is "+ score);
-            }
-
-            else { 
-                alert("Sorry! That is incorrect! Your Score is "+ score);
-            }
-
-            q3 = prompt("Is git hard?");
-            if(q3 == "yes") {
-                score++;
-                alert("nice job! your score is "+ score);
-            }
-
-            else { 
-                alert("Sorry! That is incorrect! Your Score is "+ score);
-            }
-
-    </script>
-    </head>
-
-    <body> 
-
-
-
-
-
-    
-    </body>
 </html>
